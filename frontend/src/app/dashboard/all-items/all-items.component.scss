@@ -1,0 +1,206 @@
+.mycard {
+    margin: 20px;
+    border: 1px solid rgb(135, 209, 209);
+}
+
+.search{
+    width: 200px;
+    margin-left: 40px;
+}
+
+.try {
+    margin-left: 40px;
+}
+
+.low-quantity {
+    // background-color: #ffe0e0;
+    // border: 2px solid #ff0000;
+    color: #ff0000;
+}
+
+.low-quantity-card {
+    background-color: #ffe0e0 !important;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.low-quantity-btn {
+    background-color: #ffe0e0 !important;
+    // border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.low-quantity-icon{
+    color: #ff0000;
+}
+
+.editing-card {
+    background-color:  rgba(199, 247, 236, 0.566); 
+  }
+  
+
+.img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+.edit-img {
+    width: 40px;
+    height: 40px;
+    padding: 0px 50px 0px 50px;
+}
+
+h1 {
+    text-decoration: solid;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    // display:flex;
+    // flex-direction: column repeat(auto-fill, minmax(25%, 1fr));
+    padding: 0 24px;
+}
+
+
+.nav-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.edit-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+}
+
+.edit-itemName {
+    text-transform: capitalize;
+}
+.itemname {
+    text-transform: capitalize;
+}
+
+.edit-itemCategory{
+    text-transform: capitalize;
+}
+.edit-quantity {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    margin-left: 8px;
+    width: 70%;
+}
+
+.quantity-error {
+    padding-left: 9px;
+}
+
+.quantity2 {
+    margin-left: 8px;
+}
+.button-container {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    // margin-top: 25px;
+    margin-right: 14px;
+    justify-content: space-around;
+}
+
+.button-container button {
+    margin-bottom: 10px;
+    background-color: inherit;
+    border: none;
+}
+
+.material {
+    color: rgb(14, 194, 197);
+}
+.disabled-icon {
+    color: gray;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+.mat-card-content {
+    margin-left: 25px;
+}
+
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 10px;
+    margin-top: -20px;
+}
+
+.header {
+    display: flex;
+    padding: 0px 30px;
+    margin-top: 40px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(250, 250, 250, 255);
+    width: 93%;
+    z-index: 1;
+}
+
+.scrolldiv {
+    padding-top: 180px;
+}
+
+.sel {
+    padding-top: 40px;
+}
+
+.category-select {
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2%;
+    position: fixed;
+}
+
+.mycard:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(199, 247, 236, 0.566);
+    border: 2px solid rgb(135, 209, 209);
+}
+
+.low {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-category-option {
+    float: right;
+    margin-left: auto;
+}
+
+::ng-deep .mat-menu-content{
+    max-height: 200px; 
+    overflow: scroll;
+  }
+  
+  ::ng-deep.custom-snackbar {
+    background-color: #7fe9ed; 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 32px;
+}
