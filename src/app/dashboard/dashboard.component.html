@@ -1,0 +1,56 @@
+<br />
+<br />
+<div class="buttons">
+    <h1>WELCOME TO MW PANTRY</h1>
+    <!-- <button  mat-raised-button color="primary" (click)="redirectToSnacks()">SNACKS</button>
+    <button  mat-raised-button color="primary" (click)="redirectToBeverages()">BEVERAGES</button> -->
+    <button mat-raised-button color="primary" (click)="redirectToAllitems()">
+        VIEW ALL ITEMS
+    </button>
+</div>
+
+<div class="container">
+    <mat-card>
+        <flux-image
+            style="max-width: 600px"
+            image-url="https://littlerockpantry.com/wp-content/uploads/2020/12/pantry-eateries-logo-bw.png"
+            link-url="https://twitter.com/BacktotheFuture"
+            alt-text="1988 Doc!"
+        ></flux-image>
+    </mat-card>
+
+    <flux-scroll-container>
+        <div style="display: flex; gap: 8px">
+            <mat-card>
+                <flux-card
+                    style="
+                        box-shadow: var(--flux-shadow-1);
+                        height: 100%;
+                        min-width: 400px;
+                        max-height: 400px;
+                        overflow: auto;
+                    "
+                >
+                    <h2>ABOUT PANTRY</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Mattis vulputate enim nulla aliquet.
+                        Convallis posuere morbi leo urna molestie at elementum
+                        eu facilisis.Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </flux-card>
+            </mat-card>
+        </div>
+    </flux-scroll-container>
+</div>

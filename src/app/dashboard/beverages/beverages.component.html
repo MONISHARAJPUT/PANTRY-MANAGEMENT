@@ -1,0 +1,73 @@
+<button class="goback" color="primary" (click)="redirectToHome()">
+    <span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h1>BEVERAGES</h1>
+
+<div class="flex-container">
+    <mat-card class="example-card" *ngFor="let element of bevItems">
+        <mat-card-header>
+            <mat-card-title>
+                <span *ngIf="!editingMap[element._id]">
+                    {{ element.itemName }}
+                </span>
+
+                <input
+                    *ngIf="editingMap[element._id]"
+                    [(ngModel)]="element.itemName"
+                    class="edit-input"
+                />
+            </mat-card-title>
+        </mat-card-header>
+        <img
+            mat-card-image
+            class="img"
+            src="https://cdn-icons-png.flaticon.com/128/4721/4721026.png"
+            alt="Photo of a Snacks"
+        />
+        <mat-card-content>
+            <h3>
+                <span *ngIf="!editingMap[element._id]">
+                    <h4>Quantity:{{ element.itemQuantity }}</h4>
+                </span>
+                <input
+                    *ngIf="editingMap[element._id]"
+                    type="number"
+                    [(ngModel)]="element.itemQuantity"
+                    class="edit-quantity"
+                />
+            </h3>
+            <!-- <h4>
+       <span *ngIf="!editingMap[element._id]"><h3>Expiry:{{ formatDate(element.expiration) }}</h3></span>
+       <input  *ngIf="editingMap[element._id]" type="date"  [(ngModel)]="element.expiration" class="edit-input" />
+      </h4> -->
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="buttons">
+                <button
+                    mat-raised-button
+                    color="primary"
+                    (click)="toggleEditingMode(element._id)"
+                >
+                    {{ editingMap[element._id] ? 'SAVE' : 'EDIT' }}
+                </button>
+                <button
+                    mat-raised-button
+                    color="primary"
+                    (click)="confirmDelete(element)"
+                >
+                    REMOVE
+                </button>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+    <div class="navigation-buttons">
+        <button
+            mat-fab
+            class="create"
+            color="primary"
+            (click)="redirectToAdditem()"
+        >
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+</div>
